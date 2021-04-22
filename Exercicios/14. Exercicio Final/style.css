@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.result {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+ul,
+li {
+    list-style: none;
+}
