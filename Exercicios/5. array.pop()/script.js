@@ -1,4 +1,11 @@
-const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
+//const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
+
+//const ultimoElementoListagem = listagemDeFrutas.pop();
+
+//console.log(listagemDeFrutas);
+
+//console.log(ultimoElementoListagem);
+
 
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
@@ -8,3 +15,7 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+usuarios.pop();
+
+console.log(usuarios);

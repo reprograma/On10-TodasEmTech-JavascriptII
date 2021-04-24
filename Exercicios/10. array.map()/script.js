@@ -6,3 +6,9 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+const textoResultado = usuarios.map((participantes)) => {
+    return`Nome: ${participantes.name}, Idade: ${participantes.idade}`
+});
+
+console.log(textoResultado);
