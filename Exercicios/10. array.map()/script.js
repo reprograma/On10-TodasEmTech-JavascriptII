@@ -6,3 +6,15 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+const textoResultado = usuarios.map((participante) => {
+    return `O usuário número ${participante.user} se chama ${participante.name} e tem ${participante.idade} anos.`
+});
+
+const resultadoPietra = usuarios.map((users) => {
+    if(users.user === 239) {
+        return `Nome: ${users.name}, tem ${users.idade} anos`
+    }
+})
+
+console.log(resultadoPietra);
