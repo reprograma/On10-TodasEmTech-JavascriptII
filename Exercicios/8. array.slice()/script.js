@@ -1,4 +1,4 @@
-const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
+//const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
     {user:235, name: 'Lorena', idade:20 },
@@ -7,3 +7,4 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+const selectedItens = usuarios.slace(0,3)

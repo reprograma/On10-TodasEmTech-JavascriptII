@@ -1,4 +1,8 @@
 const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
+const ultimoElementoListagem = listagemDeFrutas.pop();
+
+console.log(listagemDeFrutas);
+
 
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
