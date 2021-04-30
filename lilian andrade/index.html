@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    
+    <div class="cadastrolivros"><h1>Cadastro de Livros</h1></div>
+    <div class="conteudo">
+        <form action="" class="form__cadastro" onsubmit="cadastrarDados(event)">
+            <h2 class="nome" >Título</h2>
+            <input class="titulo"  id="titulo" type="text" name="titulo">
+
+            <h2 class="nome" >Autor</h2>
+            <input class="autor" id="autor" type="text" name="autor">
+
+            <h2 class="nome" >ISBN</h2>
+            <input class="isbn" id="isbn" type="text" name="isbn">
+
+            <h2 class="nome" >Data de Publicação</h2>
+            <input class="dataDePubicacao" id="dataDePubicacao" type="date" name="data_de_pubicacao">
+
+            
+            <h2 class="nome" >Páginas</h2>
+            <input class="paginas"  id="paginas" type="text" name="paginas">
+
+                <div class="botao">
+                    <button class="btn" type="submit">Cadastrar Livro</button>  
+                </div>        
+
+                <div id="resposta" class="formulario__resposta">
+
+                </div>
+
+        </form>   
+    </div>
+    <table class="tabela">
+        <thead class="cabecalho__tabela">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>ISBN</th>
+                <th>Data de Publicação</th>
+                <th>Páginas</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela" class="corpo__tabela"></tbody>
+    </table>
+
+    <script src="./script/script.js"></script>
+
+</body>
+</html>

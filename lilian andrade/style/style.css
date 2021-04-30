@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-image: url("https://super.abril.com.br/wp-content/uploads/2020/08/14-08_livros_SITE.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.cadastrolivros{
+    width: 800px;
+    background-color: rgb(145, 140, 129);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0 px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.conteudo {
+    width: 800px;
+    margin: auto;
+    background-image: url("https://vigiadepreco.com.br/blog/wp-content/uploads/2020/12/5-livros-baratos-para-presentear-no-fim-de-ano.jpg");
+}
+
+form {
+    padding: 10px;
+}
+
+#nome {
+    width: 100%;
+    height: 100px;
+}
+.nome {
+    margin-top: 15px;
+    width: 125px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.titulo {
+    line-height: 10px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.autor {
+    line-height: 10px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.isbn {
+    line-height: 10px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.dataDePubicacao {
+    line-height: 10px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.paginas {
+    line-height: 10px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.botao {
+    text-align: center;
+}
+
+.btn {
+    
+    text-align: center;
+    background-color:grey;
+    padding: 10px 10px 10px 10px;
+    width: 760px;
+    border-radius:15px;
+    margin-top: 15px;
+    
+} 
+
+th{
+    padding-right: 50px;
+    text-align: center;
+}
+
+td{
+    padding-right: 30px;
+    text-align: center;
+}
+
+.tabela {
+    padding: 40px 20px 30px 20px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: antiquewhite;
+    margin: 20px 100px 0 100px;
+    width: 85%;
+}
