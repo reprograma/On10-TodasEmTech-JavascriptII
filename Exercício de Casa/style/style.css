@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+/* Mobile First */
+
+h1 {
+    color: #ffff;
+}
+
+input {
+    border-radius: 2px;
+}
+
+.header {
+    display: flex;
+    padding: 40px;
+    flex-flow: row-reverse;
+    background-image: url(../img/img.estante-livros.jpg);
+    background-position: center;
+
+}
+
+.div-formulario {
+    display: grid;
+    background-color: burlywood;
+    border: ridge;    
+
+}
+.tabela {
+    padding: 10%;
+    background: #a9c1c7;
+    font-size: 55%;
+}
+.caixaDeTextoDoFormulario {
+     padding: 0,1em;
+     border: 1px solid;
+     box-shadow: 1px 1px 1px rgb(53, 41, 25);
+}
+
+
+.div-botao-formulario {
+    text-align: center;
+    margin-top: 3%;
+    
+   
+
+}
+
+.delete {
+    font-size: 1.2em;
+    background-color: rgb(42, 121, 76);
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2p
+}   
+    
+
+/* Tablet */
+@media (min-width: 768px) {
+h1 {
+    color: #ffff;
+}
+
+input {
+    border-radius: 2px;
+    padding: 0.6em;
+}
+label {
+    font-size: 22px;
+    padding: 0.2em;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.0em;
+    padding: 70px;
+    background-image: url(../img/img.estante-livros.jpg);
+    background-position: bottom;
+}
+
+.div-formulario {      
+    padding: 30px;
+    display: grid;
+    background-color: burlywood;
+   
+}
+.botaoFormulario {
+    font-size: 1.2em;
+    background-color: rgb(42, 121, 76);
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2p
+}
+
+
+.section-tabela {
+    display: flex;
+    font-size: xx-large;
+    
+}
+
+.tabela {
+    padding: 10%;
+    background: #a9c1c7;
+    font-size: 60%;
+
+}
+.delete {
+    font-size: 1.2em;
+    background-color: rgb(42, 121, 76);
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2p
+
+/* Descktop */
+
+@media (min-width: 1281px){
+
+    h1 {
+        color: #ffff;
+    }
+    
+    input {
+        border-radius: 2px;
+        padding: 0.6em;
+    }
+    label {
+        font-size: 22px;
+        padding: 0.2em;
+    }
+    
+    .header {
+
+        text-align: center;
+        font-size: 3.1em;
+        padding: 15%;
+        background-image: url(../img/img.estante-livros.jpg);
+        background-position: top;
+    }
+    
+    .div-formulario {      
+        padding: 30px;
+        display: grid;
+        background-color: burlywood;
+       
+    }
+    .botaoFormulario {
+        font-size: 1.2em;
+        background-color: rgb(42, 121, 76);
+        margin-bottom: 1em;
+        padding: 0.2em 0.6em;
+        box-shadow: 2px 2p
+    }
+    
+    
+    .section-tabela {
+        display: grid;
+        font-size: 2.5em;
+        padding: 15%;
+        width: 100%;
+    }
+    
+    .tabela {
+        padding: 10%;
+        background: #a9c1c7;
+        font-size: 60%;
+    
+    }
+    .delete {
+        font-size: 1.2em;
+        background-color: rgb(42, 121, 76);
+        margin-bottom: 1em;
+        padding: 0.2em 0.6em;
+        box-shadow: 2px 2p
+}
+
+

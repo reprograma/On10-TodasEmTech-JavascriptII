@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>My Audible Books</title>
+</head>
+<body>
+    <header class="header">
+    <h1>
+      My Audible Books
+    </h1>
+    
+    </header>
+     <main>
+         <section class="section-formulario">
+
+            <form action="enviar-dados-para-tabela" onsubmit="exibirDadosTabela(event)">
+                <div class="div-formulario">
+                    <label class="legenda-do-formulario"><strong>Titulo</strong></label>
+                    <input class="caixaDeTextoDoFormulario" type="text" id="tituloDoLivro"> 
+        
+                    <label class="legenda-do-formulario" ><strong> Autor</strong></label>
+                    <input class="caixaDeTextoDoFormulario" type="text" id="nomeDoAutor">
+        
+                    <label class="legenda-do-formulario" ><strong> ISBN</strong></label>
+                    <input class="caixaDeTextoDoFormulario" type="number" id="isbnDoLivro">
+        
+                    <label class="legenda-do-formulario" ><strong>Data de publicação</strong> </label>
+                    <input class="caixaDeTextoDoFormulario" type="date" id="dataDePublicacaoDoLivro">
+        
+                    <label class="legenda-do-formulario" ><strong> Páginas</strong></label>
+                    <input class="caixaDeTextoDoFormulario" type="number" id="numeroDePaginasDoLivro">
+
+                    <div class="div-botao-formulario">
+                        <button class="botaoFormulario" type="submit" id="botaoDeAdicionarLivro"><strong>Adicionar Livro</strong> </button>
+                    </div>
+                    
+                </div>
+                
+                
+    
+    
+         </section>
+         <section class="section-tabela">
+              <table class="tabela">
+                <thead class="cabecalhoDaTabela">
+                    <div class="div-tabela"><th>Título</th></div>
+                    <div class="div-tabela"><th>Autor</th></div>
+                    <div class="div-tabela"><th>ISBN</th></div>
+                    <div class="div-tabela"><th>Data de Publicação</th></div>
+                    <div class="div-tabela"><th>Páginas</th></div>
+                    <div class="div-tabela"><th>Data de Inserção</th></div>
+                    <div class="div-tabela"></div><th>Horário de Inserção</th></div>
+                </thead>
+                <tbody id="corpo-tabela" class="corpo-tabela">
+
+                </tbody>
+              </table>
+
+         </section>
+
+         
+     </main>
+     <script src="./script/script.js"></script>
+
+</body>
+</html>
