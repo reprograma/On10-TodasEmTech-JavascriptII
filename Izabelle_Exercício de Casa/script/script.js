@@ -2,35 +2,30 @@ let books = [
     {
         isbn: "9781593275846",
         title: "Eloquent JavaScript, Second Edition",
-        subtitle: "A Modern Introduction to Programming",
         author: "Marijn Haverbeke",
         published: "2014-12-14T00:00:00.000Z",
     },
     {
         isbn: "9781449331818",
         title: "Learning JavaScript Design Patterns",
-        subtitle: "A JavaScript and jQuery Developer's Guide",
         author: "Addy Osmani",
         published: "2012-07-01T00:00:00.000Z",
     },
     {
         isbn: "9781449365035",
         title: "Speaking JavaScript",
-        subtitle: "An In-Depth Guide for Programmers",
         author: "Axel Rauschmayer",
         published: "2014-02-01T00:00:00.000Z",
     },
     {
         isbn: "9781491950296",
         title: "Programming JavaScript Applications",
-        subtitle: "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
         author: "Eric Elliott",
         published: "2014-07-01T00:00:00.000Z",
     },
     {
         isbn: "9781593277574",
         title: "Understanding ECMAScript 6",
-        subtitle: "The Definitive Guide for JavaScript Developers",
         author: "Nicholas C. Zakas",
         published: "2016-09-03T00:00:00.000Z",
     },
@@ -53,3 +48,60 @@ let books = [
         published: "2014-04-07T00:00:00.000Z",
     }
 ]
+
+
+
+
+function exibirDados (event) {
+    event.preventDefault();
+
+    let pegaAutor = document.querySelector('#autor').value;
+    let pegaTítulo = document.querySelector('#titulo').value;
+    let pegaISBN = document.querySelector('#isbn').value;
+    let pegaDataPublicacao = document.querySelector('#dataPublicacao').value;
+  
+    
+    document.getElementById('resposta').innerHTML += `
+    <tr id="tabelaDeLivro">
+        <td>${pegaTítulo}</td>
+        <td>${pegaAutor}</td>
+        <td>${pegaISBN}</td>
+        <td>${pegaDataPublicacao}</td>
+    </tr>
+    `
+    limpardados()
+}
+
+
+let book = books.forEach((books) => {
+
+    const parseDate = new Date(books.published);
+    const getData = parseDate.toLocaleDateString('pt-br');
+    books.published = getData;
+})
+
+let selectionBooks = books.map(function(books){
+    return `<tr>
+    <td>${books.title}</td>
+    <td>${books.author}</td>
+    <td>${books.isbn}</td>
+    <td>${books.published}</td>
+        </tr>`
+});
+
+document.querySelector("#resposta tbody").innerHTML = selectionBooks.join("");
+
+
+function limpardados () {
+    document.querySelector('#titulo').value="";
+    document.querySelector('#autor').value="";
+    document.querySelector('#isbn').value="";
+    document.querySelector('#dataPublicacao').value="";
+
+}
+
+document.querySelector("#botaoDelete").addEventListener('click', function exluirLivro (event) {
+    event.preventDefault();
+
+    document.getElementById('tabelaDeLivro').remove();
+})

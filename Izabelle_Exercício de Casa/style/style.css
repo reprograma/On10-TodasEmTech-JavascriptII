@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border-radius: 10px;
+    border-style: hidden;
+	color: white;
+	
+}
+
+body {
+       background: #7303c0;
+       background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+       background: linear-gradient(to left, #a044ff, #6a3093);
+	   background: url(../img/biblioteca-online.png);
+}
+
+/* Estilo do Formulario  */
+label {
+	font-size: 1rem;
+	padding-bottom: 5px;
+	font-family: "Baloo Da 2", serif;
+	color: red;
+}
+
+input {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-color: #4baec1;
+	color: red;
+}
+
+h1 {
+	color: red;
+	text-align: center;
+	font-style: italic; 
+	font-family: "Baloo Da 2", serif;
+	
+}
+
+.formulario {
+	padding: 50px 20px 30px 20px;
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+	flex-direction: column;
+	background-color: #dbc2cf;
+	margin: 0 100px 0 100px;
+	overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.textoformulario {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*TABELA*/
+table {
+	letter-spacing: normal;
+	width: 100%;
+	padding: 5%;
+	text-align: center;
+	margin-top: auto;
+	border-collapse: separate;
+}
+
+th {
+	border: 1px solid #6d4ba3;
+	font-family: "Baloo Da 2", serif;
+	padding: 1%;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+tr {
+	background-color: #6d4ba3;
+	font-family: "Baloo Da 2", serif;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+	height: 4vh;
+	padding: auto;
+	color: rgb(255, 255, 255);
+}
+
+.excluirLivro {
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 20px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: red;
+	}
+
+	h1 {
+		text-align: center;
+		width: auto;
+
+	}
+
+	table {
+		letter-spacing: normal;
+		width: 100%;
+		padding: 5%;
+		text-align: center;
+		margin-top: auto;
+		border-collapse: separate;
+	}
+
+	table {
+		letter-spacing: normal;
+		width: 100%;
+		padding: 5%;
+		text-align: center;
+		margin: 0;
+		margin-top: auto;
+		border-collapse: separate;
+	}
+
+	th {
+		border: 1px solid #6d4ba3;
+		padding: 1%;
+		font-size: 1rem;
+		border-radius: 5px;
+		text-align: center;
+		color: red;
+		
+	}
+
+	tr {
+		background-color: #6d4ba3;
+		text-align: center;
+		overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.8)
+
+	}
+
+	td {
+		text-align: center;
+		height: 4vh;
+		padding: auto;
+		color: rgb(255, 255, 255);
+	}
+
+	.excluirLivro {
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		font-size: 3rem;
+		margin-top: 20px;
+	}
+
+}
