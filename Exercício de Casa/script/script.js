@@ -1,55 +1,40 @@
-let books = [
-    {
-        isbn: "9781593275846",
-        title: "Eloquent JavaScript, Second Edition",
-        subtitle: "A Modern Introduction to Programming",
-        author: "Marijn Haverbeke",
-        published: "2014-12-14T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449331818",
-        title: "Learning JavaScript Design Patterns",
-        subtitle: "A JavaScript and jQuery Developer's Guide",
-        author: "Addy Osmani",
-        published: "2012-07-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449365035",
-        title: "Speaking JavaScript",
-        subtitle: "An In-Depth Guide for Programmers",
-        author: "Axel Rauschmayer",
-        published: "2014-02-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781491950296",
-        title: "Programming JavaScript Applications",
-        subtitle: "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
-        author: "Eric Elliott",
-        published: "2014-07-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781593277574",
-        title: "Understanding ECMAScript 6",
-        subtitle: "The Definitive Guide for JavaScript Developers",
-        author: "Nicholas C. Zakas",
-        published: "2016-09-03T00:00:00.000Z",
-    },
-    {
-        isbn: "9781491904244",
-        title: "You Don't Know JS",
-        author: "Kyle Simpson",
-        published: "2015-12-27T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449325862",
-        title: "Git Pocket Guide",
-        author: "Richard E. Silverman",
-        published: "2013-08-02T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449337711",
-        title: "Designing Evolvable Web APIs with ASP.NET",
-        author: "Glenn Block, et al.",
-        published: "2014-04-07T00:00:00.000Z",
-    }
-]
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector("#botaoAdicionar").addEventListener("click", function livrosAdicionar(event) {
+        event.preventDefault();
+        
+        let bancoLivros = {
+            isbn: document.getElementById("livroISBN"),
+            title: document.getElementById("livroTitulo"),
+            subtitle: document.getElementById("livroSubtitulo"),
+            author: document.getElementById("livroAutor"),
+            published: document.getElementById("livroData"),
+        }
+
+        /* let livroTitulo = document.getElementById("livroTitulo").value;
+        let livroAutor = document.getElementById("livroAutor").value;
+        let livroISBN = document.getElementById("livroISBN").value;
+        let livroData = document.getElementById("livroData").value;
+        let livroPaginas = document.getElementById("livroPaginas").value;
+        let dataInsercao = new Date().toLocaleDateString("pt-br");
+        let horaInsercao = new Date ().toLocaleTimeString("pt-br"); */
+
+        let exibeResposta = document.getElementById("resposta");
+        let exibeLista = document.getElementById("addLivros");
+
+
+        if (bancoLivros.isbn === "" || bancoLivros.title === "" || bancoLivros.author === "" || bancoLivros.published === "") {
+            exibeResposta.innerHTML = "Por favor, preencha todos os campos."
+        } else {
+            exibeResposta.innerHTML = (`O livro "${livroTitulo}" do autor ${livroAutor} foi adicionado à Biblioteca às ${horaInsercao} do dia ${dataInsercao}.`)
+            exibeLista.push("bancoLivros") = `<tr>
+                <td>${livroTitulo}</td>
+                <td>${livroAutor}</td>
+                <td>${livroISBN}</td>
+                <td>${livroData}</td>
+                <td>${livroPaginas}</td>
+                <td>${dataInsercao} às ${horaInsercao}</td>
+            </tr>`
+
+        }
+
+})})

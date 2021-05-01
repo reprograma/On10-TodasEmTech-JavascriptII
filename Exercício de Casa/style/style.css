@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #EEFAFC;
+}
+
+@media only screen and (min-width: 360px) {
+
+/* HEADER */
+
+header {
+    box-sizing: border-box;
+    background-color: #2292A4;
+    padding: 2rem;
+    width: 100%;
+}
+
+.headerCaixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitulo {
+    font-family: 'Orelega One', cursive;
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.headerImg {
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+
+/* FORMULARIO*/
+
+.formCaixa {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 0rem 3rem 0rem;
+    background-color: white;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+form > input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    border: #2292A4 solid 0.1rem;
+}
+
+#botaoAdicionar {
+    background-color: #2292A4;
+    font-size: 1.6rem;
+    color: white;
+    width: 25rem;
+    padding: 1.4rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    border:white;
+    border-radius: 1rem;
+}
+
+#botaoAdicionar:hover {
+    font-weight: bolder;
+}
+
+:placeholder-shown{
+    text-align: center;
+}
+
+.tabela {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem 0rem 3rem 0rem;
+    background-color: white;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (min-width: 700px) {
+    form > input {
+        width: 50rem;
+    }
+
+    th {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 0 3rem 0 3rem;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: white;
+        color: white;
+        background-color: #2292A4;
+    }
+
+    .listaLivros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
