@@ -1,0 +1,58 @@
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+     
+    <form onsubmit="criarTabela(event)">
+        <div class="div-formulario">
+        <h1>Relação de Livros</h1>
+        <label for="titulo">Titulo</label>
+        <input type="text" id="titulo">
+        <label for="subtitulo">Subtitulo</label>
+        <input type="text" id="subtitulo">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn">
+        <label for="autor">Autor</label>
+        <input type="text" id="autor">
+        <label for="pages">Páginas</label>
+        <input type="number" id="pages">
+        <label for="data">Data de Publicação</label>
+        <input type="date" id="data">
+        </div>
+    
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Subtitulo</th>
+                <th>ISBN</th>
+                <th>Autor</th>
+                <th>Páginas</th>
+                <th>Data de publicação</th>
+                <th>Data Inserção</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+
+
+
+        </tbody>
+    </table>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
