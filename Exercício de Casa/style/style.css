@@ -1,0 +1,95 @@
+body {
+  background-image: url(../imagem/astronauta-esta-lendo-um-livro-cinza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'IBM Plex Sans', sans-serif ;
+}
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.tabela {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(243, 205, 243);
+  color: black;
+  
+}
+
+.tabela thead th {
+    color: rgb(97, 22, 167);
+  padding: 0 5px;
+}
+
+.tabela td {
+  padding: 10px;
+}
+.tabela tr:nth-child(even) {
+  background: rgb(233, 231, 231);
+}
+
+.planetalivros {
+  font-style: oblique;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.botao {
+  margin: 2% auto;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+}
+
+.livrocad {
+  color: black;
+}
+
+.dados {
+  margin-top: 1%;
+}
+
+.form {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  display: block;
+  padding: 15px;
+  color: black;
+}
+
+.input {
+  height: 20px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.btn-danger {
+  background-color: rgb(238, 93, 93);
+}
+
+.btn-success {
+    background-color: lightgreen;
+}
+
+.text-white {
+    color: white;
+}
+
+.icon {
+    font-size: large;
+
+}

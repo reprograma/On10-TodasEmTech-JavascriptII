@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanetBooks</title>
+    <link
+      rel="shortcut icon"
+      href="https://icons-for-free.com/iconfiles/png/512/flat+planet-1320109745923920928.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 class="planetalivros">PlanetBooks</h1>
+
+    <main class="container">
+      <form class="form">
+        <h2 class="livroscadas">Cadastrar Livro</h2>
+        <div>
+          <div>
+            <label for="titulo">Título</label>
+          </div>
+          <input class="input" id="titulo" type="text" />
+        </div>
+
+        <div class="dados">
+          <div>
+            <label for="autor">Autor</label>
+          </div>
+          <input class="input" id="autor" type="text" />
+        </div>
+
+        <div class="dados">
+          <div>
+            <label for="isbn">ISBN</label>
+          </div>
+          <input class="input" id="isbn" type="text" />
+        </div>
+
+        <div class="dados">
+          <div>
+            <label for="dataPub">Data de Publicação</label>
+          </div>
+          <input class="input" id="dataPub" type="text" />
+        </div>
+
+        <div class="dados">
+          <div>
+            <label for="paginas"> Páginas</label>
+          </div>
+          <input class="input" id="paginas" type="text" />
+        </div>
+        <div class="dados">
+          <div>
+            <label for="idioma"> Idioma</label>
+          </div>
+          <input class="input" id="idioma" type="text" />
+        </div>
+
+        <button id="submeterForm" class="botao btn btn-success" type="submit">
+          Adicionar
+        </button>
+      </form>
+
+      <div>
+        <h2 class="livrocad">Livros Cadastrados</h2>
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>ISBN#</th>
+              <th>Data de Publicação</th>
+              <th>Páginas</th>
+              <th>Idioma</th>
+            </tr>
+          </thead>
+          <tbody id="tabela"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script/books.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
