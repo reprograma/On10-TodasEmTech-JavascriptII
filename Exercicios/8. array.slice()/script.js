@@ -7,3 +7,9 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+const selectedItens = listagemDeFrutas.slice(2,4);
+console.log(selectedItens);
+
+const selectedUsers = usuarios.slice(2,5);
+console.log(selectedUsers);

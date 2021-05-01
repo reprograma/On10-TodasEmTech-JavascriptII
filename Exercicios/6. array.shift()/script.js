@@ -8,3 +8,10 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+listagemDeFrutas.shift();
+console.log(listagemDeFrutas);
+
+usuarios.shift();
+console.log(usuarios);
+

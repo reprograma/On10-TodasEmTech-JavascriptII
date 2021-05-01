@@ -7,3 +7,9 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+
+countryList.splice(3,1,"Peru");
+console.log(countryList);
+
+usuarios.splice(3,1, {user:237, name:"Camila", idade: 29});
+console.log(usuarios);

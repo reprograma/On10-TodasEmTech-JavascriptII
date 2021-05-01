@@ -92,7 +92,6 @@ Assim, vamos produzir uma nova versão do site previamente elaborado.
    
 6. O livro adicionado permanecerá podendo ser deletado pelo usuário.
    
-7. A informação de data de inserção deverá ser removida da listagem de livros.**Na listagem dos livros inseridos, deverá vir uma informação nova, denominada "Data da inserção", contendo a data e o horário em que o livro foi inserido no sistema**.
    
 8. É preciso seguir a estrutura de repositório contida nessa pasta "Exercício de Casa".
    

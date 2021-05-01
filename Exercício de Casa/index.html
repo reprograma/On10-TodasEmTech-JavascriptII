@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet" >
+    <title>Biblioteca</title>
+</head>
+<body>
+<div>
+    <h1>My Audible Books</h1>
+    <form action="envio_dados" onsubmit="exibirDados(event)">
+        <div>
+        <label for="nomeDoAutor">Autor:</label>
+        <br><input type="text" name="autor" id="nomeDoAutor"><br><br>
+        <label for="tituloDoLivro">Titulo:</label>
+        <br><input type="text" name="titulo" id="tituloDoLivro">
+        <br><br><label for="isbnDoLivro">ISBN:</label>
+        <br><input type="text" name="isbn" id="isbnDoLivro">
+        <br><br><label for="dataDaPublicacao">Data da Publicação:</label>
+        <br><input type="date" name="data-publicacao" id="dataDaPublicacao">
+        <br><br><label for="numeroDePaginas">Páginas:</label>
+        <br><input type="number" name="paginas" id="numeroDePaginas">
+        
+    </div>   
+    <div>       
+        <br><br><input type="submit" name="enviar"  id="botaoAdicionarLivro" value="Adicionar livro"> </input>
+
+    </div>
+  
+    </form> 
+    
+    <table>
+        <thead>
+
+        <tr> 
+                <th scope="col">Autor</th>
+                <th scope="col">Título</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Data da Publicação</th>
+                <th scope="col">Páginas</th>
+                <th scope="col">Data de inserção</th>  
+        </tr>
+       </thead>
+       <tbody id="resposta">
+
+       </tbody>
+
+    </table>
+
+
+    <script type="text/javascript" src="./script/script2.js"></script> 
+    
+</body>
+</html>

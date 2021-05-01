@@ -4,12 +4,14 @@ const usuarios = [
     {user:236, name: 'Patricia', idade:24 },
     {user:237, name: 'Mariana', idade:15 },
     {user:238, name: 'Isis', idade:34 },
-    {user:239, name: 'Pietra', idade:23 }
+    {user:239, name: 'Pietra', idade:23 },
+    {user:240, name:"Camila", idade: 29}
 ]
 
-const textoResultado = usuarios.map((participante) => {
-    return `Nome: ${participante.name}, Idade: ${participante.idade} `
-});
+let somaIdades = 0;
+usuarios.forEach(function(itens) {
+    somaIdades += itens.idade;
 
-console.log(textoResultado)
+})
 
+console.log(somaIdades);

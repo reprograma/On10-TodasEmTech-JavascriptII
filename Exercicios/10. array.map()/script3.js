@@ -1,5 +1,3 @@
-const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
-
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
     {user:235, name: 'Lorena', idade:20 },
@@ -9,8 +7,11 @@ const usuarios = [
     {user:239, name: 'Pietra', idade:23 }
 ]
 
-const ultimosElementoListagem = listagemDeFrutas.pop();
-console.log(listagemDeFrutas);
+const resultadoPietra = usarios.map((users) => {
+    if (users.user === 239) {
+        return `Nome: ${users.name}, tem ${users.idade} anos`
+    }
 
-const usuariosPop = usuarios.pop();
-console.log(usuarios);
+})
+
+console.log(resultadoPietra);
