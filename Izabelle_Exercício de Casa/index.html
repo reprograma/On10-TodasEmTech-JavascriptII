@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <main>
+        <form class="formulario" onsubmit="exibirDados (event)">
+            <h1>Biblioteca Online</h1>
+            <div class="textoformulario">
+                <label for="titulo">
+                    Título*
+                </label>
+                <input type="text" id="titulo" placeholder="Digite o título do Livro" onfocus=this.value='' required>
+
+                <label for="autor">
+                    Autor(a)*
+                </label>
+                <input type="autor" id="autor" placeholder="Digite o autor do Livro" onfocus=this.value='' required>
+
+                <label for="isbn">
+                    ISBN*
+                </label>
+                <input type="number" id="isbn" placeholder="Digite o ISBN do Livro">
+
+                <label for="paginas">
+                    Páginas*
+                </label>
+                <input type="number" id="paginas" placeholder="Número de páginas">
+          
+
+
+                <label for="dataPublicacao" class = 'news_label' >Data de Publicação* </label>
+                    
+                <input type="date"  class = 'news_imput' id="dataPublicacao" onfocus=this.value = '' required>
+            </div>
+    
+
+         <div class="textoformulario">
+                <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="ENVIAR">
+            </div> 
+           
+        </form>
+
+        <!--seção tabela começa aqui-->
+        <table class="tabela" id="resposta">
+            <thead class="cabecalhotabela">
+                <tr>
+                    <th>Título</th>
+                    <th>Autor(a)</th>
+                    <th>ISBN</th>
+                    <th>Data de Publicação</th>
+                </tr>
+            </thead>
+           <tbody> 
+
+           </tbody>
+
+        </table>
+
+        <div class="excluirLivro">
+            <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="EXCLUIR">
+        </div>
+
+
+        </section>
+    </main>
+    <footer style="color:white; text-align:center">
+        Projeto feito com muito carinho por Izabelle Souza e ©Reprograma.
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
