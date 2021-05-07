@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Biblioteca</title>
+  </head>
+  <body>
+    <!-- cabeçalho -->
+    <div class="container">
+      <img
+        class="icon-book"
+        src="img/Book-icon-bible-removebg-preview.png"
+        alt="icone de livro"
+      />
+      <h1 class="main-title">My<strong>Audible</strong>Books</h1>
+    </div>
+
+    <hr />
+
+    <!-- formulário -->
+    <div class="container-form">
+      <form action="">
+        <label for="title">Título</label><br />
+        <input
+          required
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Insira aqui o título"
+        /><br /><br />
+        <label for="author">Autor</label><br />
+        <input
+          required
+          type="author"
+          id="author"
+          name="author"
+          placeholder="Insira aqui o autor"
+        /><br /><br />
+        <label for="isbn">ISBN</label><br />
+        <input
+          required
+          type="text"
+          id="isbn"
+          name="isbn"
+          placeholder="Insira aqui o número ISBN"
+          maxlength="17"
+          onkeyup="isbnMask()"
+          onkeypress="return event.charCode>=48 && event.charCode<=57"
+        /><br /><br />
+        <label for="date">Data de Publicação</label><br />
+        <input required type="date" id="date" name="date" /><br /><br />
+        <label for="pages">Páginas</label><br />
+        <input
+          type="number"
+          id="pages"
+          name="pages"
+          placeholder="Insira aqui o número de páginas"
+        /><br /><br />
+        <input
+          class="button"
+          type="submit"
+          value="Adicionar Livro"
+          onclick="addBook()"
+        />
+      </form>
+    </div>
+
+    <hr />
+
+    <!-- Tabela -->
+    <div class="container-table">
+      <table>
+        <thead>
+          <tr>
+            <td class="td-head"><h3>Título</h3></td>
+            <td class="td-head"><h3>Autor</h3></td>
+            <td class="td-head"><h3>ISBN</h3></td>
+            <td class="td-head"><h3>Data</h3></td>
+            <td class="td-head"><h3>Páginas</h3></td>
+            <td class="td-head"><h3>Data de inserção</h3></td>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

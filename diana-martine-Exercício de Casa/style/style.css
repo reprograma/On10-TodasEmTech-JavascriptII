@@ -1,0 +1,215 @@
+/* importação de fonte */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  transition: .5s;
+  background-color: lightgray;
+  font-family: "Roboto", sans-serif;
+}
+
+/* cabeçalho */
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.icon-book {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+}
+
+strong {
+  color: purple;
+}
+
+/* divisão */
+hr {
+  margin: 1rem 0;
+}
+
+.container-button {
+  width: 18rem;
+  margin: auto;
+}
+
+.btn-toggle {
+  background: #656565;
+  color: white;
+  width: 10rem;
+  height: 3.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* formulário */
+.container-form {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+input {
+  width: 18rem;
+  height: 2rem;
+  border: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  height: 4rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgb(0, 149, 149);
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: rgb(0, 93, 93);
+}
+
+/* tabela */
+.container-table {
+  display: none;
+}
+
+.container-table.on {
+  display: block;
+  margin: auto;
+  width: 18rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  font-size: 0.54rem;
+}
+
+tr {
+  background: white;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.td-head {
+  padding: .2rem;
+  transition: 0.5s;
+  color: black;
+}
+
+.td-head:hover {
+  background: rgb(226, 226, 226);
+  box-shadow: inset 0px -1px 3px rgba(0, 0, 0, 0.5);
+}
+
+td {
+  padding: 0.4rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+}
+
+/* medias */
+@media (min-width: 375px) {
+  .icon-book {
+    margin: -1rem;
+    width: 6rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .container-button {
+    width: 21.5rem;
+  }
+
+  input {
+    width: 22rem;
+  }
+
+  .container-table.on {
+    width: 22rem;
+  }
+
+  table {
+    font-size: 0.65rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .icon-book {
+    margin: -1rem;
+    width: 8rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .container-button {
+    width: 24.5rem;
+  }
+
+  input {
+    width: 25rem;
+  }
+
+  .container-table.on {
+    width: 25rem;
+  }
+
+  table {
+    font-size: 0.78rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon-book {
+    margin: -1rem;
+    width: 10rem;
+  }
+
+  .main-title {
+    font-size: 5rem;
+  }
+
+  .container-button {
+    width: 44.5rem;
+  }
+
+  input {
+    width: 45rem;
+    height: 3rem;
+  }
+
+  .container-table.on {
+    width: 45rem;
+  }
+
+  .td-head {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-form {
+    width: 45.8rem;
+    height: 35rem;
+  }
+}
