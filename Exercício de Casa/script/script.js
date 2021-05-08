@@ -15,8 +15,9 @@ function onSubmit(event) {
       "Poxa, os dados estão em brancos.  Por favor verificar e entrar novamente! 😔 "
     );
   } else {
-    table.style = "display: block;";
-    table.innerHTML += `
+    books.map((livro) => {
+      table.style = "display: block;";
+      table.innerHTML += `
   <tr class="teste" id ="teste">
 
         <td class="borde"> ${autor}</td> 
@@ -30,8 +31,10 @@ function onSubmit(event) {
       </td>
       
   </tr>`;
+    });
   }
 }
+lerLivros();
 
 document
   .getElementById("resposta")
