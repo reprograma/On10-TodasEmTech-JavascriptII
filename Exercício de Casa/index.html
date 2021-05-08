@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+    <link rel="stylesheet" href="../Exercício de Casa/style/style.css" />
+  </head>
+  <body>
+    <section class="margin">
+      <header>
+        <div class="retangulo">
+          <img
+            class="imgGabrielle"
+            src="./img/img_gabi.jpeg"
+            alt="imagem gabrielle"
+          />
+          <h1 class="name">Gabrielle Oliveira</h1>
+          <p class="profissao">Developer</p>
+          <div class="resposive">
+            <a href="https://www.linkedin.com/in/gabrielleemanoela/">
+              <img
+                class="img-rede-social1"
+                src="./img/linkedin.png"
+                alt="linkedin"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielleemanoela/">
+              <img
+                class="img-rede-social2"
+                src="./img/discord.png"
+                alt="discord"
+              />
+            </a>
+
+            <a href="https://github.com/GabrielleEmanoela">
+              <img
+                class="img-rede-social3"
+                src="./img/github.png"
+                alt="git hub"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <h2 class="title">Biblioteca</h2>
+    <form class="campo_retangulo" onsubmit="onSubmit(event)">
+      <div class="input-group">
+        <label> Autor: </label>
+        <input type="text" class="input_autor" />
+      </div>
+      <div class="input-group">
+        <label> Título: </label>
+        <input type="text" class="input_titulo" />
+      </div>
+      <div class="input-group">
+        <label> ISBN: </label>
+        <input type="text" class="input_isbn" />
+      </div>
+      <div class="input-group">
+        <label>Data de publicação: </label>
+        <input type="date" class="input_date" />
+      </div>
+      <div class="input-group-btn">
+        <input type="reset" class="btn" />
+        <input type="submit" value="Enviar" class="btn" />
+      </div>
+    </form>
+    <divc>
+      <table id="resposta" class="resposta">
+        <tr>
+          <td class="borde">Autor</td>
+          <td class="borde">Título</td>
+          <td class="borde">Título</td>
+          <td class="borde">ISBN</td>
+          <td class="borde">Data da Publicação</td>
+          <td class="borde">Data da Inserção</td>
+          <td>Data da Publicação</td>
+        </tr>
+      </table>
+    </divc>
+    <script src="./script/script.js" />
+  </body>
+</html>

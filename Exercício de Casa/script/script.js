@@ -1,55 +1,40 @@
-let books = [
-    {
-        isbn: "9781593275846",
-        title: "Eloquent JavaScript, Second Edition",
-        subtitle: "A Modern Introduction to Programming",
-        author: "Marijn Haverbeke",
-        published: "2014-12-14T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449331818",
-        title: "Learning JavaScript Design Patterns",
-        subtitle: "A JavaScript and jQuery Developer's Guide",
-        author: "Addy Osmani",
-        published: "2012-07-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449365035",
-        title: "Speaking JavaScript",
-        subtitle: "An In-Depth Guide for Programmers",
-        author: "Axel Rauschmayer",
-        published: "2014-02-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781491950296",
-        title: "Programming JavaScript Applications",
-        subtitle: "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
-        author: "Eric Elliott",
-        published: "2014-07-01T00:00:00.000Z",
-    },
-    {
-        isbn: "9781593277574",
-        title: "Understanding ECMAScript 6",
-        subtitle: "The Definitive Guide for JavaScript Developers",
-        author: "Nicholas C. Zakas",
-        published: "2016-09-03T00:00:00.000Z",
-    },
-    {
-        isbn: "9781491904244",
-        title: "You Don't Know JS",
-        author: "Kyle Simpson",
-        published: "2015-12-27T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449325862",
-        title: "Git Pocket Guide",
-        author: "Richard E. Silverman",
-        published: "2013-08-02T00:00:00.000Z",
-    },
-    {
-        isbn: "9781449337711",
-        title: "Designing Evolvable Web APIs with ASP.NET",
-        author: "Glenn Block, et al.",
-        published: "2014-04-07T00:00:00.000Z",
-    }
-]
+function onSubmit(event) {
+  event.preventDefault();
+
+  const autor = document.querySelector(".input_autor").value;
+  const titulo = document.querySelector(".input_titulo").value;
+  const isbn = document.querySelector(".input_isbn").value;
+  const data = document.querySelector(".input_date").value;
+  let dataInserção = new Date().toLocaleString("pt-br");
+  let horarioInsercao = new Date().toLocaleTimeString("pt-br");
+
+  const table = document.getElementById("resposta");
+
+  if (autor === "" || titulo == "" || isbn === "" || data === "") {
+    alert(
+      "Poxa, os dados estão em brancos.  Por favor verificar e entrar novamente! 😔 "
+    );
+  } else {
+    table.style = "display: block;";
+    table.innerHTML += `
+  <tr class="teste" id ="teste">
+
+        <td class="borde"> ${autor}</td> 
+        <td class="borde"> ${titulo}</td> 
+        <td class="borde" > ${isbn} </td> 
+        <td class="borde"> ${data} </td> 
+        <td class="borde"> ${dataInserção} </td> 
+        <td class="borde"> ${horarioInsercao} </td> 
+        <td nowrap>
+        <button id "apagar" class="apagar" onsubmit="removerElemento(event)">Apagar</button>
+      </td>
+      
+  </tr>`;
+  }
+}
+
+document
+  .getElementById("resposta")
+  .addEventListener("click", function removerElemento(event) {
+    document.querySelector("#teste").remove();
+  });
