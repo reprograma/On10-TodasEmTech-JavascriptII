@@ -1,4 +1,8 @@
 const listagemDeFrutas = [ "Uva", "Banana", "Manga", "Cajá", "Pinha", "Maçã", "Melão"];
+    
+    const ulitmoElementodaListagem = listagemDeFrutas.pop();
+    console.log(listagemDeFrutas);
+    console.log(ulitmoElementodaListagem);
 
 const usuarios = [
     {user:234, name: 'Marcia', idade:40 },
@@ -8,3 +12,6 @@ const usuarios = [
     {user:238, name: 'Isis', idade:34 },
     {user:239, name: 'Pietra', idade:23 }
 ]
+    const removeUsuario = usuarios.pop();
+    console.log(usuarios);
+    console.log(removeUsuario);

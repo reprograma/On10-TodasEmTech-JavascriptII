@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>My Audible Books</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/MyAudibleBooks-logo.png" alt="Logo do My Audible Books" class="img-header"/>
+    </header>
+    <main>
+        <section class="section-formulario">
+            <form action="envia_dados_para_tabela" onsubmit="exibirDadosTabela(event)">
+                <div class="div-formulario">
+                    <label class="legenda-formulario" id="titulo" for="tituloDoLivro">Título</label>
+                    <input class="caixaDeTexto-formulario" type="text" id="tituloDoLivro" name="tituloDoLivro">
+                </div>
+                <div class="div-formulario">
+                  <label class="legenda-formulario" for="autorDoLivro">Autor</label>
+                  <input class="caixaDeTexto-formulario" type="text" id="autorDoLivro" name="autorDoLivro">  
+                </div>
+                <div class="div-formulario">
+                    <label class="legenda-formulario" for="isbnDoLivro">ISBN</label>
+                    <input class="caixaDeTexto-formulario" type="number"  id="isbnDoLivro" name="isbnDoLivro">  
+                </div>
+                <div class="div-formulario">
+                    <label class="legenda-formulario" for="dataDePublicacaoDoLivro">Data de Publicação</label>
+                    <input class="caixaDeTexto-formulario" type="date" id="dataDePublicacaoDoLivro" name="dataDePublicacaoDoLivro">  
+                </div>
+                <div class="div-botao-formulario">
+                    <input type="submit" id="botaoDeAdicionarLivro" class="botaoFormulario">
+                </div>
+            </form>
+        </section>
+        <section class="section-tabela">
+            <h2 class="titulo-section-tabela">Acervo de livros da biblioteca:</h2>
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr>
+                        <div class="div-titulo-tabela">
+                            <th>Título</th>
+                        </div>
+                        <div class="div-titulo-tabela">
+                            <th>Autor</th>
+                        </div>
+                        <div class="div-titulo-tabela">
+                            <th>ISBN</th>
+                        </div>
+                        <div class="div-titulo-tabela">
+                            <th>Data de Publicação</th>
+                        </div>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela" class="corpo-tabela">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
